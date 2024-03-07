@@ -60,7 +60,22 @@ a.button2:hover {
     color: #fff;
 }
 
+.square-1 {
+    position: absolute;
+    right: -127px;
+}
 
+.square-2 {
+    position: absolute;
+    left: -127px;
+}
+
+@media screen and (max-width: 768px) {
+    .square-1,
+    .square-2 {
+        display: none;
+    }
+}
 
 /* HEADER */
 
