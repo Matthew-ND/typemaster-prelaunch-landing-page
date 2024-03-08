@@ -77,6 +77,12 @@ a.button2:hover {
     }
 }
 
+picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* HEADER */
 
 header {
@@ -86,6 +92,15 @@ header {
 }
 
 /* INTRODUCTION */
+
+.introduction {
+    display: flex;
+    width: 80%;
+}
+
+.image-1 {
+    width: 540px;
+}
 
 /* DESCRIPTION */
 
