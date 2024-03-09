@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap" rel="stylesheet">
+  <link hred="./resources/css/reset.css" rel="stylesheet">
   <link href="./resources/css/style.css" rel="stylesheet">
 
   <title>Frontend Mentor | Typemaster pre-launch landing page</title>
@@ -19,38 +20,42 @@
     <a class="button1" href="#">Pre-order now</a>
   </header>
 
-  <section class="introduction">
-    <div>
-      <img class="square-1" src="./resources/images/shared/pattern-square.svg" alt="">
-      <h1>Typemaster keyboard</h1>
-      <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
-      <a class="button2" href="#">Pre-order now</a>
-      <p>Release on 5/27</p>
+  <section>
+    <img class="square-1" src="./resources/images/shared/pattern-square.svg" alt="">
+    <div class="introduction">
+      <div>
+        <h1>Typemaster keyboard</h1>
+        <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+        <div>
+          <a class="button2" href="#">Pre-order now</a>
+          <p>Release on 5/27</p>
+        </div>
+      </div>
+      <picture class="image-1">
+        <source media="(max-width: 768px)" srcset="./resources/images/tablet/image-keyboard.jpg">
+        <source media="(max-width: 480px)" srcset="./resources/images/mobile/image-keyboard.jpg">
+        <img src="./resources/images/desktop/image-keyboard.jpg" alt="typemaster keyboard on desk">
+      </picture>
     </div>
-    <picture class="image-1">
-      <source media="(max-width: 768px)" srcset="./resources/images/tablet/image-keyboard.jpg">
-      <source media="(max-width: 480px)" srcset="./resources/images/mobile/image-keyboard.jpg">
-      <img src="./resources/images/desktop/image-keyboard.jpg" alt="typemaster keyboard on desk">
-    </picture>
   </section>
 
-  <section class="description">
-    <div>
-      <img class="square-2" src="./resources/images/shared/pattern-square.svg" alt="">
-    </div>
-    <picture>
-      <source media="(max-width: 768px)" srcset="./resources/images/tablet/image-phone-and-keyboard.jpg">
-      <source media="(max-width: 480px)" srcset="./resources/images/mobile/image-phone-and-keyboard.jpg">
-      <img src="./resources/images/desktop/image-phone-and-keyboard.jpg" alt="phone beside keyboard on desk">
-    </picture>
-    <picture>
-      <source media="(max-width: 768px)" srcset="./resources/images/tablet/image-glass-and-keyboard.jpg">
-      <source media="(max-width: 480px)" srcset="./resources/images/mobile/image-glass-and-keyboard.jpg">
-      <img src="./resources/images/desktop/image-glass-and-keyboard.jpg" alt="typemaster keyboard on desk">
-    </picture>
-    <div> 
-      <h2>Mechanical wireless keyboard</h2>
-      <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p>
+  <section>
+    <img class="square-2" src="./resources/images/shared/pattern-square.svg" alt="">
+    <div class="description">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./resources/images/tablet/image-phone-and-keyboard.jpg">
+        <source media="(max-width: 480px)" srcset="./resources/images/mobile/image-phone-and-keyboard.jpg">
+        <img src="./resources/images/desktop/image-phone-and-keyboard.jpg" alt="phone beside keyboard on desk">
+      </picture>
+      <picture>
+        <source media="(max-width: 768px)" srcset="./resources/images/tablet/image-glass-and-keyboard.jpg">
+        <source media="(max-width: 480px)" srcset="./resources/images/mobile/image-glass-and-keyboard.jpg">
+        <img src="./resources/images/desktop/image-glass-and-keyboard.jpg" alt="typemaster keyboard on desk">
+      </picture>
+      <div> 
+        <h2>Mechanical wireless keyboard</h2>
+        <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p>
+      </div>
     </div>
   </section>
 

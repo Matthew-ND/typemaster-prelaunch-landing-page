@@ -1,6 +1,8 @@
+/* GENERAL */
+
 body {
     font-size: 16px;
-    margin: 55px 110px;
+    margin: 55px 150px;
 }
 
 h1, h2, h3 {
@@ -77,10 +79,16 @@ a.button2:hover {
     }
 }
 
-picture {
+picture img {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 0.75em;
+}
+
+header,
+section {
+    margin-bottom: 75px;
 }
 
 /* HEADER */
@@ -95,11 +103,8 @@ header {
 
 .introduction {
     display: flex;
-    width: 80%;
-}
-
-.image-1 {
-    width: 540px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* DESCRIPTION */
@@ -117,7 +122,6 @@ header {
 
 .icon img {
     margin: auto;
-    
 }
 
 /* FOOTER */
