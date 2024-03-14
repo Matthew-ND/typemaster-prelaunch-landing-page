@@ -76,7 +76,7 @@ a.button2:hover {
     bottom: 102px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
     .square-1,
     .square-2 {
         display: none;
