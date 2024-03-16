@@ -2,7 +2,7 @@
 
 body {
     font-size: 16px;
-    margin: 55px auto;
+    margin: 3em auto;
     max-width: 1100px;
     box-sizing: border-box;
     
@@ -16,17 +16,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 3.5em;
     line-height: 56px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 36px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
 }
 
@@ -67,13 +67,13 @@ a.button2:hover {
 
 .square-1 {
     position: absolute;
-    right: -127px;
+    right: -7em;
 }
 
 .square-2 {
     position: absolute;
-    left: -127px;
-    bottom: 102px;
+    left: -7em;
+    bottom: 5.93em;
 }
 
 @media screen and (max-width: 1440px) {
@@ -85,13 +85,8 @@ a.button2:hover {
 
 picture img {
     max-width: auto;
-    height: 480px;
+    height: 30em;
     border-radius: 0.75em;
-}
-
-header,
-section {
-    margin-bottom: 75px;
 }
 
 /* HEADER */
@@ -102,15 +97,15 @@ header {
     align-items: center;
 }
 
+
+
 /* INTRODUCTION */
 
 .introduction {
     display: flex;
     justify-content: flex-start;
-}
-
-.introduction-body {
-    padding: 0 180px 0 0;
+    margin-top: 6em;
+    gap: 9em;
 }
 
 .introduction-footer {
@@ -118,7 +113,7 @@ header {
     gap: 1.7em;
 }
 
-.introduction-footnotes p {
+.introduction-footer p {
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -134,7 +129,7 @@ header {
 
 .description-body {
     width: 16em;
-    padding: 0 0 0 100px;
+    padding-left: 6.25em;
 }
 
 .orange-overlay {
@@ -155,10 +150,9 @@ header {
 
 .features {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
-    gap: 1.7em;
-    margin-top: 155px;
+    margin-top: 8.5em;
 }
 
 .features-topic {
@@ -169,8 +163,8 @@ header {
     display: flex;
     justify-content: center;
     background-color: #f16718;
-    width: 65px;
-    height: 65px;
+    width: 4em;
+    height: 4em;
     border-radius: 0.75em;
 }
 
@@ -181,6 +175,6 @@ header {
 /* FOOTER */
 
 footer {
-    margin-top: 125px;
+    margin-top: 8.5em;
     text-align: center;
 }
