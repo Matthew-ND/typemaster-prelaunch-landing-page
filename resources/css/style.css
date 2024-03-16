@@ -18,11 +18,13 @@ h1, h2, h3 {
 h1 {
     font-size: 3.5em;
     line-height: 56px;
+    margin-bottom: 0.5em;
 }
 
 h2 {
     font-size: 2em;
     line-height: 36px;
+    margin-bottom: 1em;
 }
 
 h3 {
@@ -73,7 +75,7 @@ a.button2:hover {
 .square-2 {
     position: absolute;
     left: -7em;
-    bottom: 5.93em;
+    bottom: 8.5em;
 }
 
 @media screen and (max-width: 1440px) {
@@ -104,13 +106,14 @@ header {
 .introduction {
     display: flex;
     justify-content: flex-start;
-    margin-top: 6em;
+    margin-top: 5em;
     gap: 9em;
 }
 
 .introduction-footer {
     display: flex;
     gap: 1.7em;
+    margin-top: 2em;
 }
 
 .introduction-footer p {
@@ -124,6 +127,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2em;
     gap: 1.7em;
 }
 
@@ -152,7 +156,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-top: 8.5em;
+    margin-top: 11em;
 }
 
 .features-topic {
