@@ -2,10 +2,10 @@
 
 body {
     font-size: 16px;
-    margin: 3em auto;
-    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3.5em 3.5em;
+    max-width: 1200px;
     box-sizing: border-box;
-    
 }
 
 h1, h2, h3 {
@@ -86,9 +86,11 @@ a.button2:hover {
 }
 
 picture img {
+    display: block;
     max-width: auto;
     height: 30em;
     border-radius: 0.75em;
+    object-fit: contain;
 }
 
 /* HEADER */
@@ -132,8 +134,10 @@ header {
 }
 
 .description-body {
-    width: 16em;
     padding-left: 6.25em;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .orange-overlay {
@@ -154,9 +158,11 @@ header {
 
 .features {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     margin-top: 11em;
+    flex-wrap: wrap;
+    gap: 1.2em;
 }
 
 .features-topic {
@@ -174,6 +180,21 @@ header {
 
 .icon img {
     margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .features {
+        align-items: center;
+    }
+
+    .features h3,
+    .features p {
+        text-align: center;
+    }
+
+    .icon {
+        margin: 0 auto;
+    }
 }
 
 /* FOOTER */
