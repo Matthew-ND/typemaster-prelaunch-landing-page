@@ -3,9 +3,15 @@
 body {
     font-size: 16px;
     margin: 0 auto;
-    padding: 3.5em 3.5em;
+    padding: 3.5em;
     max-width: 1200px;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 643px) {
+    body {
+        padding: 2em;
+    }
 }
 
 h1, h2, h3 {
@@ -87,10 +93,12 @@ a.button2:hover {
 
 picture img {
     display: block;
-    max-width: auto;
-    height: 30em;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
     border-radius: 0.75em;
     object-fit: cover;
+    overflow: hidden;
 }
 
 /* HEADER */
@@ -107,15 +115,13 @@ header {
     }
 }
 
-
-
 /* INTRODUCTION */
 
 .introduction {
     display: flex;
     justify-content: flex-start;
     margin-top: 5em;
-    gap: 9em;
+    gap: 8em;
 }
 
 .introduction-footer {
@@ -129,6 +135,46 @@ header {
     font-weight: 600;
 }
 
+@media screen and (max-width: 940px) {
+    .right-bleed img {
+        width: calc(100% + 200px);
+        margin-right: -10px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    .introduction {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin-top: 1em;
+    }
+
+    h1 {
+        font-size: 3.2em;
+    }
+    
+    .introduction img {
+        margin-top: -3em;
+    }
+
+    .introduction-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .introduction-footer {
+        justify-content: space-between;
+    }
+
+    .introduction-footer a {
+        padding: 1em;
+    }
+}
+
 /* DESCRIPTION */
 
 .description {
@@ -136,13 +182,20 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 2em;
-    gap: 1.7em;
+    gap: 1.7em;   
+}
+
+.description-img-container {
+    display: flex;
+    gap: 4%;
+    max-height: 100%;
 }
 
 .description-body {
-    padding-left: 6.25em;
+    padding-left: 6em;
     display: flex;
     flex-wrap: wrap;
+    width: 30%;
     
 }
 
@@ -159,6 +212,38 @@ header {
     height: 100%;
     border-radius: 0.75em;
 }
+
+@media screen and (max-width: 940px) {
+    .description {
+        flex-wrap: wrap;
+    }
+
+    .description-img-container {
+        max-width: 100%;
+    }
+
+    .description-body {
+        flex-wrap: nowrap;
+        width: 100%;
+        padding-left: 0;
+        justify-content: space-between;
+        gap: 15%;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    .description-body {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .orange-overlay {
+        margin-left: -40px;
+        overflow: hidden;
+    }
+}
+
 
 /* FEATURES */
 
@@ -195,6 +280,7 @@ header {
 @media screen and (max-width: 643px) {
     .features {
         align-items: center;
+        margin-top: 5em;
     }
 
     .features-topic {
