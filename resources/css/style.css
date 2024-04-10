@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     margin: 0 auto;
     padding: 3.5em;
+    width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
 }
@@ -122,11 +123,12 @@ header {
 
 @media screen and (max-width: 940px) {
     .right-bleed {
-        overflow: hidden;
+        overflow-x: clip;
+        margin-right: -3.5em;
     }
     .right-bleed img {
-        width: calc(100% + 200px);
-        margin-right: -10px;
+        width: calc(100% + 300px);
+        margin-right: -300px;
     }
 }
 
